@@ -1,4 +1,5 @@
 from sqlalchemy import func, desc, select, and_
+import faker
 
 from src.models import Teacher, Student, Discipline, Grade, Group
 from src.db import session

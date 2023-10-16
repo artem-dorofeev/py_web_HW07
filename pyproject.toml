@@ -1,16 +1,12 @@
 [tool.poetry]
-name = "hw07"
+name = "py-web-hw07"
 version = "0.1.0"
 description = ""
-authors = ["Artem Dorofeev <arem.dorofeev@gmail.com>"]
+authors = ["Artem Dorofeev <130536391+artem-dorofeev@users.noreply.github.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
-faker = "^17.5.0"
-sqlalchemy = "^2.0.4"
-alembic = "^1.9.4"
-psycopg2 = "^2.9.5"
+python = "^3.11"
 
 
 [build-system]
