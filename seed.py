@@ -34,17 +34,17 @@ def date_range(start: date, end: date) -> list:
 def fill_data():
     # Створюємо списки предметів і груп
     disciplines = [
-        "Вища математика",
-        "Хімія",
-        "Економіка підприємства",
-        "Обчислювальна математика",
-        "Історія України",
-        "Теоретична механіка",
-        "Менеджмент організацій",
-        "Системне програмування",
+        "PyCore",
+        "PyWEB",
+        "HTML+SSL",
+        "SQL",
+        "History",
+        "Graphics",
+        "Economi",
+        "Engish",
     ]
 
-    groups = ["ВВ1", "ДД33", "АА5"]
+    groups = ["py_web1", "py_web2", "py_web3"]
 
     fake = faker.Faker()
     number_of_teachers = 5
@@ -76,9 +76,9 @@ def fill_data():
 
     def seed_grades():
         # дата початку навчального процесу
-        start_date = datetime.strptime("2020-09-01", "%Y-%m-%d")
+        start_date = datetime.strptime("2022-05-01", "%Y-%m-%d")
         # дата закінчення навчального процесу
-        end_date = datetime.strptime("2021-05-25", "%Y-%m-%d")
+        end_date = datetime.strptime("2023-12-30", "%Y-%m-%d")
         d_range = date_range(start=start_date, end=end_date)
         discipline_ids = session.scalars(select(Discipline.id)).all()
         student_ids = session.scalars(select(Student.id)).all()

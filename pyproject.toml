@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "py-web-hw07"
+version = "0.1.0"
+description = "hw07 python web"
+authors = ["Artem Dorofeev <130536391+artem-dorofeev@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sqlalchemy = "^2.0.22"
+alembic = "^1.12.1"
+faker = "^19.12.0"
+psycopg2 = "^2.9.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
